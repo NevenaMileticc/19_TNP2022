@@ -1,0 +1,103 @@
+% !TEX encoding = UTF-8 Unicode
+
+\documentclass[a4paper]{article}
+
+\usepackage{color}
+\usepackage{url}
+\usepackage[T2A]{fontenc} % enable Cyrillic fonts
+\usepackage[utf8]{inputenc} % make weird characters work
+\usepackage{graphicx}
+
+\usepackage[english,serbian]{babel}
+%\usepackage[english,serbianc]{babel} %ukljuciti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi cirilica
+
+\usepackage[unicode]{hyperref}
+\hypersetup{colorlinks,citecolor=green,filecolor=green,linkcolor=blue,urlcolor=blue}
+
+%\newtheorem{primer}{Пример}[section] %ćirilični primer
+\newtheorem{primer}{Primer}[section]
+
+\begin{document}
+
+\title{3D stampa\\ \small{Seminarski rad u okviru kursa\\Tehničko i naučno pisanje\\ Matematički fakultet}}
+
+
+\author{    Nevena Miletic\\ mi22193@alas.matf.bf.ac.rs
+        \and Matija Todorovic\\ mi22282@alas.matf.bf.ac.rs
+        \and Djordje Sajic\\ mi22@alas.matf.bf.ac.rs
+        \and Relja Gajic\\ mi22@alas.matf.bf.ac.rs
+ }
+
+\date{10.novembar 2022.}
+\maketitle
+\abstract{
+Aditivna proizvodnja je moderna tehnologija proizvodnje trodimenzionalnih objekata. 3D štampa predstavlja generalno brže, jeftinije i lakše rešenje od drugih tehnologija proizvodnje 3D objekata. Omogućava izradu maketa delova i sklopova od više različitih materijala, različitih mehaničkih i fizičkih svojstava u jedinstvenom procesu. Ova tehnologija proizvodi modele koji verno oponašaju izgled, utisak i funkcionalnost proizvoda prototipa. U poslednjih nekoliko godina 3D štampači su postali finansijski dostupni malim i srednjim preduzećima, čime se izrada prototipa pomera iz teške industrije i u kancelarijsko okruženje.Iako su pomenute
+mašine do skora bile dostupne samo malom broju ljudi, uglavnom naučnicima, to više nije slučaj. Cena 3D štampača su sve niže. Vremenom mogućnosti koje ovi uredjaji pružaju polako postaju neograničene.
+\tableofcontents
+
+\newpage
+
+\section{Uvod}
+\label{sec:uvod}
+Aditivna proizvodnja predstavlja način proizvodnje gde se iz digitalnog modela stvara trodimenzionalan predmet. Kako to zapravo izgleda?
+\bigbreak
+
+3D štampa može da se zamisli kao štampa tankih horizontalnih slojeva. Ti slojevi predstavljaju horizontalni presek predmeta.
+\bigbreak Tehnologija je nastala 80-ih godina prošlog veka i koristila se pre svega za proizvodnju prototipova. Ipak, od tada 3D štampa počinje da se koristi kao tehnika za stvaranje proizvoda gotovo u svim industrijama.
+Proizvodi koji se 3d štampaju mogu biti od različitih materijala, od plastike, preko keramike, do metala. Tehnologija se i dalje razvija a novi materijali pomoću kojih se štampa se uvode neverovatnom brzinom. Sada je moguće i istovremeno uklapanje različitih vrsta materijala. Osim izrade prototipova, 3D štampači nude veliki potencijal za proizvodnju različitih aplikacija u oblasti proizvodnje nakita, obuće, industrijskog dizajna, arhitekture, automobilske industrije, avio, stomatološke i medicinske industrije.
+
+\section{Istorija razvoja 3D stampe}
+
+
+\bigbreak Možda ste čuli za 3D štampu koja je proglašena budućnošću proizvodnje. I sa načinom na koji se tehnologija razvija i širi komercijalno, može se vrlo dobro nadoknaditi u oprezu koja ga okružuje. Šta je 3D štampanje? A ko je to izmislio? 
+\bigbreak Najbolji primer na koji mogu da se setim kako opisuje kako 3D štamparski radovi dolaze iz TV serije Star Trek: The Next Generation. U tom fiktivnom futurističkom univerzumu, posada na brodu svemirskog broda koristi mali uređaj koji se zove replikator za stvaranje skoro bilo čega, kao u bilo čemu od hrane i pića do igračaka. 
+\bigbreak Sada, dok oba mogu da izvedu trodimenzionalne objekte, 3D štampanje nije skoro toliko sofisticirano. Pošto replikator manipuliše subatomske čestice kako bi proizveo bilo koji mali objekat, 3D štampači "štampaju" materijale u sukcesivnim slojevima kako bi formirali objekat. 
+\bigbreak Istorijski gledano, razvoj tehnologije počinje početkom 1980-ih godina, čak i predavanje TV emisije. 1981. godine, Hideo Kodama iz Instituta za industrijska istraživanja Nagoya prvi je objavio račun o tome kako se materijali koji se nazivaju fotopolimeri koji su ojačani prilikom izlaganja UV zračenju mogli iskoristiti za brzo izradu čvrstih prototipova. Iako je njegov članak postavio temelje za 3D štampanje, on nije prvi napravio 3D štampač. 
+\bigbreak Ta prestižna čast ide na inženjer Chuck Hull-a, koji je dizajnirao i napravio prvi 3D štampač 1984. radio je za kompaniju koja je koristila UV lampe za oblikovanje čvrstih, izdržljivih premaza za stolove kada je pogodio ideju da iskoristi ultraljubičastu tehnologija za izradu malih prototipova. 
+\bigbreak Ključ za izradu takvog štampača bili su fotopolimeri koji su ostali u tečnom stanju sve dok nisu reagovali na ultraljubičastu svetlost. Sistem koji je Hull na kraju razvio, poznat kao stereolitografija, koristio je UV zračenje kako bi skicirao oblik objekta iz kadra tečnih fotopolimera. 
+\bigbreak On je patentirao tehnologiju 1984. godine, ali je tri nedelje nakon što je tim francuskih pronalazača Alain Le Méhauté, Olivier de Witte i Jean Claude André podnio patent za sličan proces. Međutim, njihovi poslodavci napustili su napore da dalje razviju tehnologiju zbog "nedostatka poslovne perspektive". To je omogućilo Hullu da autorsko pravo pod pojmom "Stereolithography". Njegov patent, naslovljen "Aparat za proizvodnju trodimenzionalnih objekata stereolitografijom" objavljen je u martu 11, 1986. Te godine, Hull je takođe formirao 3D sisteme u Valensiji, Kalifornija, tako da on može započeti brzo prototipiranje komercijalno. 
+Dok je Hullov patent obuhvaćao mnoge aspekte 3D štampanja, uključujući dizajn i operativni softver, tehnike i razne materijale, drugi izumitelji bi se nadovezali na koncept sa različitim pristupima. 1989. godine dodeljen je patent Carlu Deckardu, diplomantu Univerziteta u Teksasu koji je razvio metod pod nazivom selektivno lasersko sinterovanje. Sa SLS-om, laserski zrak se koristi za prilagođavanje praškastih materijala, kao što je metal, zajedno kako bi se formirao sloj objekta. 
+\bigbreak Svježi prah bi se dodao na površinu nakon svakog uzastopnog sloja. Ostale varijacije kao što su direktno metalno lasersko sinterovanje i selektivno lasersko taljenje se takođe koriste za izradu metalnih predmeta. 
+\bigbreak Najpopularniji i najprepoznatljiviji oblik 3D štampanja naziva se modeliranje spojenih depozita. FDP, koji je razvio pronalazač S. Scott Crump, postavlja materijal u slojeve direktno na platformu. Materijal, obično smola, se isprazni kroz metalnu žicu i, nakon puštanja kroz mlaznicu, odmah se ojača. Ideja je došla u Crump 1988. godine, dok je pokušavao da napravi igračku žabu za svoju žerku izdavanjem voska za sveće pomoću pištolja za lepak. 
+\bigbreak 1989. godine Crump je patentirao tehnologiju i sa svojom suprugom soustanovio Stratasys Ltd. za proizvodnju i prodaju 3D štamparskih mašina za brzo prototipiranje ili komercijalnu proizvodnju. 
+Kompaniju su uzeo u javnost 1994. godine, a do 2003. godine FDP je postao najprodavanija tehnologija brze prototipizacije. 
+
+\section{Tehnike 3D stampe}
+\label{sec:naslov1}
+Prema tehnici 3D štampanja možemo razlikovati sledece tehnologije:
+\begin{itemize}
+\item \textbf{Inkjet}
+\item \textbf{Fused Deposition Modelin(FDM)}
+\item \textbf{Stereolitografija}
+\item \textbf{Selektivno lasersko sinterovanje (SLS)}
+\item \textbf{Proizvodnja objekata laminacijom (LOM)}
+\end{itemize} 
+
+
+
+ 
+
+
+\subsection{Inkjet}
+\label{subsec:podnaslov1}
+
+
+
+\subsection{Fused Deposition Modelin(FDM)}
+\label{subsec:podnaslov2}
+
+ 
+\subsection{Stereolitografija}
+\label{subsec:podnaslov3}
+
+
+\subsection{Selektivno lasersko sinterovanje (SLS)}
+\label{subsec:podnaslov4}
+
+
+\subsection{Proizvodnja objekata laminacijom (LOM)}
+\label{subsec:podnaslov5}
+
+
+
+\end{document}
