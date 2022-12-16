@@ -80,9 +80,11 @@ Prema tehnici 3D štampanja možemo razlikovati sledeće tehnologije:
 
 \subsection{Inkjet}
 \label{subsec:podnaslov1}
-Inject - kreira protorip na osnovu 3D modela tako što pravi sloj po sloj projekta.
+Ubrizgivanje (eng, Inject) - kreira protorip na osnovu 3D modela tako što pravi sloj po sloj projekta.
 \bigbreak Ističe se po atributu da je adaptivan na razne oblike tečnih materijala što pruža stvaranje konduktivnih ili izolacionih struktura u visokoj rezoluciji. 
-\bigbreak Za razliku od procesa koji koriste fuziju metalnih ili plastičnih materijala, injekt štampanju nije potrebno dodatno prerađivanje i obrada nako izvršenog štampanja.
+\bigbreak Za razliku od drugih procesa, injekt štampanju nije potrebno dodatno prerađivanje i obrada nako izvršenog štampanja.
+\bigbreak Prilikom izrade materijali u tečnom stanju se stavljaju na vrh za štampanje (eng, Printing head) koji pravi dati projekat.
+\bigbreak Moze uz glavni materija koji se koristi za model da se doda pomoćni materijal (eng, Support material) koji mu daje čvrstinu i stabilnos prilikom izrade.
 \begin{center}
 \includegraphics[width=.5\textwidth ]{Tehnikeslike/Inject.png}
 \end{center}
@@ -112,18 +114,20 @@ Stereolitografija (Stereolithography) -poznatija kao ŠLA, koristi rezervoar te�
 
 \subsection{Selektivno lasersko sinterovanje (SLS)}
 \label{subsec:podnaslov4}
-Selective Laser Sintering (SLS) - koristi se za pravljenje prototipa od metala i plastike. Uz pomoć powder beds mašina pravi dizajnove sloj po sloj, pri čemu koristi  laser grejanje i zbijanje (sinterovanje) praha datog materijala. 
-\bigbreak Nakon svakog sloja postolje se spušra i dodaje novi sloj materijala sve dok mašina ne završi izgradnju modela. Pošto čvrstina modela zavisi od najveće temperature mašine SLS zagreje prevremeno prah na powder bed-u ispod njene temperature topljenja da napravi lakše laseru da poveća temperaturu određene regije. 
-\bigbreak Ovaj proces zahteva pomoćne stubove koji služe da ne dođe do defekta viših slojeba modela prilikom izgrade.
-
+Izborno lasersko lemljenje(eng, Selective Laser Sintering (SLS)) - koristi se za pravljenje prototipa od metala i plastike. Uz pomoć zrna materijala (eng, powder beds) mašina pravi dizajnove sloj po sloj, pri čemu koristi lasersko grejanje i zbijanje (sinterovanje) praha datog materijala. 
+\bigbreak Nakon svakog sloja postolje se spušta i dodaje novi sloj materijala sve dok mašina ne završi izgradnju modela. Pošto čvrstina modela zavisi od najveće temperature mašine SLS zagreje prevremeno prah materijala ispod njengove temperature topljenja kako bi dostigao maksimalne temperature za najmanji period, što isto omogućava da laser lakše izreže željene oblike za sloj. 
+\bigbreak Kao što je pokazano na slici rezervoari (eng, powder tank) stavljaju prah na vrh prethodnog sloja, dok se njegova platforma spušta za sledeći sloj.
+\bigbreak Sečivo za slojeve(recoater blade) prolazi i ravnja vrh modela, nakon toga dolazi do građenja oblika koji radi laser. 
 \begin{center}
 \includegraphics[width=.5\textwidth ]{Tehnikeslike/Sls.png}
 \end{center}
 \newpage
 \subsection{Proizvodnja objekata laminacijom (LOM)}
 \label{subsec:podnaslov5}
-Proizvodnja objekata laminacijom (Laminated object manufacturing) - skraćeno LOM, koristi papir premazan lepkom, plastiku ili metalni laminat kao medijum za 3D štampanje. 
-\bigbreak Hartije od datog materijala su zalepljene jedna za drugu sloj po sloj i isečene u oblik koristeći nož ili laser. Nakon tog procesa one se mogu dodatno doraditi šmirglanjem i bušenjem ako je potrebno.
+Proizvodnja objekata laminacijom (eng, Laminated object manufacturing (LOM)) - Korišćenjem papira premazanim lepkom, plastiku ili metalni laminat kao sredstvo za 3D štampanje. 
+\bigbreak Hartije se lepe jedna za drugu sloj po sloj na platformi uz pomoć motora koji na krajevima imaju rolne korišćenog materijala (Material spool).
+\bigbreak Na radnoj površini se seku u željeni oblik pomoću noža ili lasera, a neiskorišćeni ostatak idu u rolnu koja se nalazi u smeru obrtanja motora.
+\bigbreak Nakon tog procesa one se mogu dodatno doraditi šmirglanjem i bušenjem ako je potrebno.
 
 \begin{center}
 \includegraphics[width=.5\textwidth ]{Tehnikeslike/LOM.jpg}
@@ -134,11 +138,11 @@ Proizvodnja objekata laminacijom (Laminated object manufacturing) - skraćeno LO
  \hline
  Broj & Tip  & Materijal \\ [1ex] 
  \hline\hline
- 1 & Inject  & Tečni materijali \\ 
+ 1 & Tečni materijali \\ 
  \hline
  2 & FDM & termoplastični filamenti \\
  \hline
- 3 & ŠLA & tečni fotopolimer\\
+ 3 & SLA & tečni fotopolimer\\
  \hline
  4 & SLS & Metal ili plastika\\
  \hline
