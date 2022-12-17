@@ -7,6 +7,7 @@
 \usepackage[T2A]{fontenc} % enable Cyrillic fonts
 \usepackage[utf8]{inputenc} % make weird characters work
 \usepackage{graphicx}
+\usepackage[font=small,labelfont=bf]{caption}
 
 \usepackage[english,serbian]{babel}
 %\usepackage[english,serbianc]{babel} %uključiti babel sa ovim opcijama, umesto gornjim, ukoliko se koristi ćirilića
@@ -87,6 +88,7 @@ Ubrizgivanje (eng, Inject) - kreira protorip na osnovu 3D modela tako što pravi
 \bigbreak Moze uz glavni materija koji se koristi za model da se doda pomoćni materijal (eng, Support material) koji mu daje čvrstinu i stabilnos prilikom izrade.
 \begin{center}
 \includegraphics[width=.5\textwidth ]{Tehnikeslike/Inject.png}
+\captionof{figure}{Model ubrizgavanja (eng. Inkjet) }
 \end{center}
 
 \subsection{Fused Deposition Modelin(FDM)}
@@ -97,6 +99,7 @@ FDM (Fused Deposition Modeling) - predstavlja najkorišćenu i najjeftiniju tehn
 
 \begin{center}
 \includegraphics[width=.5\textwidth ]{Tehnikeslike/FDM.PNG}
+\captionof{figure}{Uprošćena šema FMD 3D štampača }
 \end{center}
 
 \subsection{Stereolitografija}
@@ -107,6 +110,7 @@ Stereolitografija (Stereolithography) -poznatija kao ŠLA, koristi rezervoar te�
 
 \begin{center}
 \includegraphics[width=.5\textwidth ]{Tehnikeslike/Stereolitografija.PNG}
+\captionof{figure}{Šema stereolitografije}
 \end{center}
 
 \bigbreak
@@ -120,6 +124,7 @@ Izborno lasersko lemljenje(eng, Selective Laser Sintering (SLS)) - koristi se za
 \bigbreak Sečivo za slojeve(recoater blade) prolazi i ravnja vrh modela, nakon toga dolazi do građenja oblika koji radi laser. 
 \begin{center}
 \includegraphics[width=.5\textwidth ]{Tehnikeslike/Sls.png}
+\captionof{figure}{Šema SLS-a}
 \end{center}
 \newpage
 \subsection{Proizvodnja objekata laminacijom (LOM)}
@@ -131,6 +136,7 @@ Proizvodnja objekata laminacijom (eng, Laminated object manufacturing (LOM)) - K
 
 \begin{center}
 \includegraphics[width=.5\textwidth ]{Tehnikeslike/LOM.jpg}
+\captionof{figure}{Šema LOM-a}
 \end{center}
 
 \begin{center}
@@ -138,7 +144,7 @@ Proizvodnja objekata laminacijom (eng, Laminated object manufacturing (LOM)) - K
  \hline
  Broj & Tip  & Materijal \\ [1ex] 
  \hline\hline
- 1 & Tečni materijali \\ 
+ 1 & Tečni materijali  &\\ 
  \hline
  2 & FDM & termoplastični filamenti \\
  \hline
@@ -149,6 +155,7 @@ Proizvodnja objekata laminacijom (eng, Laminated object manufacturing (LOM)) - K
  5 & LOM & papir premazan lepkom, plastiku ili metalni laminat\\ [1ex] 
  \hline
 \end{tabular}
+\captionof{table}{Tipovi - Materijal} 
 \end{center}
 
 \newpage
