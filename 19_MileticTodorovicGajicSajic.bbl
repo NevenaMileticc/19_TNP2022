@@ -1,13 +1,10 @@
 \begin{thebibliography}{1}
 
-\bibitem{c}
-\url{https://bs.eferrit.com/ko-je-pronasao-3d-stampanje//}.
-
-\bibitem{d}
-\url{https://www.rapiddirect.com/blog/3d-prototyping//}.
-
 \bibitem{b}
 \url{https://3dstampa.rs/sta-sve-moze-da-se-3d-stampa//}.
+
+\bibitem{c}
+\url{https://3dstampa.rs/sta-je-3d-stampa/}.
 
 \bibitem{fdm}
 \url{%https://tractus3d.com/knowledge/learn-3d-printing/fdm-3d-printing//}.
@@ -19,6 +16,6 @@
 \url{%https://www.twi-global.com/technical-knowledge/faqs/what-is-laminated-object-manufacturing-lom/}.
 
 \bibitem{a}
-\url{https://3dstampa.rs/sta-je-3d-stampa/}.
+\url{https://bs.eferrit.com/ko-je-pronasao-3d-stampanje//}.
 
 \end{thebibliography}
